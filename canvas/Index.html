@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>canvas</title>
+		<link rel="stylesheet" type="text/css" href="css/Index.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css">
+	</head>
+
+	<body>
+		<!--导航栏-->
+		<div class="navigation">
+			<div class="main">
+				<ol>
+					<a href="../Home/Index.html">
+						<li>返回首页</li>
+					</a>
+					<a href="../canvas/Index.html">
+						<li>canvas贪吃蛇</li>
+					</a>
+					<a href="../DOM/Index.html">
+						<li>DOM操作</li>
+					</a>
+					<a href="../Phone/Index.html" target="_blank">
+						<li>手机端展示</li>
+					</a>
+					<a href="../contact/Index.html">
+						<li>联系方式</li>
+					</a>
+				</ol>
+			</div>
+		</div>
+		<!--贪吃蛇界面-->
+		<div class="content">
+		<div id="large-header" class="large-header">
+			<div class="main-title">
+				<div class="main">
+			<canvas id="can" width="600" height="600"></canvas>
+			<div id="box">
+				<label for="size">网格规格：</label>
+				<select name="bSize" id="size">
+					<option value="10">15X15</option>
+					<option value="20">20X20</option>
+					<option value="30">30X30</option>
+				</select>
+				<button id="btn1">确定</button>
+				<span style="margin-left:20px;width: 100px;">游戏分数：</span><span id="scores">0</span>
+				<span style="margin-left:20px;width: 100px;">最高纪录：</span><span id="record">0</span>
+			</div>
+			<!--文字界面-->
+			<div class="word">
+				<h2>实现思路</h2>
+				<p>1.先把蛇画出来:定义一下蛇的结构，用一个数组保存3个矩形，包含蛇头(红)和蛇身(灰);</p>
+				<p>2.蛇能动(重点):蛇移动方式：只有蛇头在动,蛇头前进一格,最后一个移动到蛇头的位置,周而复始;</p>
+				<p>3.随机投放食物:需要随机食物的位置,需要判断食物在不在蛇身上;</p>
+				<p>4.吃食物:判断食物是否与蛇头重叠,数组加一个元素,生成新的食物(随机位置);</p>
+				<p>5.游戏结束:撞自己判定 可以穿墙;</p>
+				<p>6.网格可以选择难度,点击确定即可,键盘上下左右移动,可记录最高分.</p>
+			</div>
+		</div>
+				</span></div>
+			<canvas id="demo-canvas"></canvas>
+			
+			
+		</div>
+		
+	</div>
+		
+	</body>
+	<script type="text/javascript" src="js/Index.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-2.js"></script>
+</html>

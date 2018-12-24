@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM操作</title>
+		<link rel="stylesheet" type="text/css" href="css/Index.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css">
+	</head>
+
+	<body>
+		<!--导航栏-->
+		<div class="navigation">
+			<div class="main">
+				<ol>
+					<a href="../Home/Index.html">
+						<li>返回首页</li>
+					</a>
+					<a href="../canvas/Index.html">
+						<li>canvas贪吃蛇</li>
+					</a>
+					<a href="../DOM/Index.html">
+						<li>DOM操作</li>
+					</a>
+					<a href="../Phone/Index.html" target="_blank">
+						<li>手机端展示</li>
+					</a>
+					<a href="../contact/Index.html">
+						<li>联系方式</li>
+					</a>
+				</ol>
+			</div>
+		</div>
+        <div class="content">
+		<div id="large-header" class="large-header">
+			<div class="main-title">			
+		    <div id="main">
+			<div id="wrap">
+				<!-- 得分 -->
+				<div id="score">00</div>
+				<!-- 时间 -->
+				<div id="time"></div>
+				<!-- 狼坑 -->
+				<div id="wolfs"></div>
+				<div id="start">
+					<p>开始游戏</p>
+				</div>
+				<div id="over"><a href="Index.html">GAME_OVER</a></div>
+			</div>
+			<div class="word">
+				实现思路： ps：这个只是思路，详细可看代码注释。<br><br>
+				<br>一、把静态页面做出来<br><br>
+				<br>二、1.找到每个洞穴；2.使用预加载，提升用户体验<br><br>
+				<br>三、重点(DOM操作) 让狼出现，需要考虑的问题；1.一个坑只能出现一只狼；2.两只狼出现的概率不一样；3.每一只狼出现的时间等<br><br>
+				<br>四、完善操作 1.不能重复点击，防止多次加分：2.优化游戏本身性能<br><br>
+				<br>五、添加时间，时间到了停止游戏 <br><br>
+				<br>六、鼠标操作
+			</div>
+		</div>
+				</span></div>
+			<canvas id="demo-canvas"></canvas>
+			
+			
+		</div>
+		
+	</div>
+	</body>
+	<script src="js/Index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-2.js"></script>
+</html>

@@ -1,0 +1,22 @@
+.large-header {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	padding-left: 10px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+
+
